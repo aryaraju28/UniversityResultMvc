@@ -1,0 +1,47 @@
+﻿
+@model UniversityResultMvc.Models.Student
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2 style="text-align:center">KTU University Exam Result </h2>
+<table border="1" align="center" height="300" width="500">
+
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Malayalam</td>
+        <td> @Model.Malayalam </td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>@Model.English</td>
+    </tr>
+    <tr>
+        <td>Hindi</td>
+        <td>@Model.Hindi</td>
+    </tr>
+    <tr>
+        <td>Maths</td>
+        <td>@Model.Maths</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>@Model.Science</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td> @Model.Total</td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td>@Model.Status</td>
+    </tr>
+
+
+</table>
+<div>
+    @Html.ActionLink("Previous ", "Index")
+</div>

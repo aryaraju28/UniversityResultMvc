@@ -1,0 +1,21 @@
+﻿@model UniversityResultMvc.Models.Student
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using (Html.BeginForm("StudentResult", "Student"))
+{
+    <table border="1">
+        <tr>
+            <td>Register Number</td>
+            <td>@Html.TextBoxFor(m => m.RegisterNo)</td>
+
+        </tr>
+    </table>
+    <input type="submit" value="Submit" style="width:120px" />
+
+
+}
+
+
